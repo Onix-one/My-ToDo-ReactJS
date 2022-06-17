@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+.side-bar{
+  height: 64px !important;
+  background-color: #425476;
+}
+
+.side-bar-button{
+  height: 64px !important;
+  width: 60px !important;
+  background-color: #3c4a61;
+  border: none;
+}
+
+.side-bar-button:hover,
+.side-bar-button:focus,
+.side-bar-button:active {
+  background-color: #20324e;
+}
+
+.page-header-profile-greeting-1{
+  color: #7a8db0;
+  font-size: 14px;
+  line-height: var(--font-size-m);
+  white-space: nowrap;
+  text-align: left;
+  z-index: 2;
+}
+.page-header-profile-greeting-2{
+  color: #eaedf1;
+  font-size: 18px;
+
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  line-height: var(--font-size-m);
+  z-index: 2;
+ }
+ .profile-greeting{
+  height: 35px !important;
+ }
+
