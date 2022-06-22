@@ -11,6 +11,7 @@ import Toolbar from '@mui/material/Toolbar';
 import SideBarHeaderButton from '../buttons/side-bar-header-button'
 
 import './side-bar.css';
+import ActiveLink from './page-side-bar-active/page-side-bar-active';
 
 const drawerWidth = 290;
 
@@ -20,9 +21,9 @@ const SideBar = (props) => {
         <div>
             <Toolbar className='side-bar-header p-0' >
                 <SideBarHeaderButton></SideBarHeaderButton>
-                <a className="header-profile__avatar-link me-3">
-                    <img className=" header-profile__avatar"></img>
-                </a>
+                <div className="header-profile__avatar-link me-3">
+                    <img className=" header-profile__avatar" alt=''></img>
+                </div>
                 <div className='ml-4 mb-1'>
                     <div className="header-profile_greeting">
                         Welcome back,
@@ -38,7 +39,6 @@ const SideBar = (props) => {
             <div className="app-sidebar__title">
                 <span className="app-sidebar__title-text">Telegram chats</span>
             </div>
-            <List>
                 {['All chats', 'Baned users'].map((text, index) => (
                     <ListItem key={text} disablePadding>
                         <ListItemButton>
@@ -49,7 +49,6 @@ const SideBar = (props) => {
                         </ListItemButton>
                     </ListItem>
                 ))}
-            </List>
         </div>
     );
 
