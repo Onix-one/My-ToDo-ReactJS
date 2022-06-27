@@ -1,3 +1,11 @@
 .todo-list-item{
     padding: .25rem .75rem;
 }
+
+.done{
+    text-decoration: line-through;
+}
+
+.important{
+    color: tomato;
+}
